@@ -1,0 +1,21 @@
+/*
+Shared gradle properties
+ */
+    ext{
+        depsVersion=[
+                retrofitVersion   : '2.3.0',
+                rxJavaVersion                     : '2.1.12',
+                okhttpVersion                     : '3.4.1',
+                okhttpVersion                     : '3.4.1',
+                rxAndroidVersion                  : '2.0.2',
+        ]
+        deps=[
+                okhttp                     : 'com.squareup.okhttp3:okhttp:' + depsVersion.okhttpVersion,
+                rxjava                     : 'io.reactivex.rxjava2:rxjava:' + depsVersion.rxJavaVersion,
+                converterGson              : 'com.squareup.retrofit2:converter-gson:' + depsVersion.retrofitVersion,
+                converterScalar            : 'com.squareup.retrofit2:converter-scalars:'+depsVersion.retrofitVersion,
+                adapterRxjava              : 'com.squareup.retrofit2:adapter-rxjava2:' + depsVersion.retrofitVersion,
+                retrofit                   : 'com.squareup.retrofit2:retrofit:' + depsVersion.retrofitVersion,
+                rxandroid                  : 'io.reactivex.rxjava2:rxandroid:' + depsVersion.rxAndroidVersion
+        ]
+    }
